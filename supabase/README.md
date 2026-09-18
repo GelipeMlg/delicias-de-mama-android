@@ -5,6 +5,8 @@ Rama de trabajo: **`codex/base-de-datos`**.
 ## Archivos
 
 - [Migración inicial](migrations/202609160001_base_inicial.sql): diez tablas, índices, restricciones e historial. Ya ejecutada manualmente en Supabase.
+- [Gastos por pedido](migrations/202609180001_gastos_por_pedido.sql): relación opcional de gastos con pedidos, aplicada manualmente el 18 de septiembre de 2026.
+- [Pruebas de gastos por pedido](tests/gastos_por_pedido.sql): gastos generales, vínculo válido, rechazo de pedido inexistente y RLS; revierte los datos ficticios.
 - [Pruebas de integridad](tests/base_inicial.sql): datos ficticios dentro de una transacción que termina en `ROLLBACK`.
 - [Documentación del esquema](../docs/base-de-datos.md): relaciones, resultados y límites.
 - [Datos del proyecto Supabase](../docs/supabase.md): referencia del servicio y estado.

@@ -23,8 +23,10 @@ erDiagram
     COTIZACIONES o|--o| VENTAS : respalda
     VENTAS ||--o{ PAGOS : registra
     PEDIDOS ||--|{ HISTORIAL_PEDIDO : registra
+    PEDIDOS o|--o{ GASTOS : tiene_costos
     GASTOS {
         uuid id PK
+        uuid pedido_id FK
         text concepto
         text categoria
         numeric monto
@@ -32,7 +34,18 @@ erDiagram
     }
 ```
 
-El historial se genera al dar de alta el pedido y cambiar su estado. GASTOS es independiente de los pedidos. auth.users pertenece a Supabase; no se creó ni modificó esa tabla. Una cotización vinculada a una venta debe pertenecer al mismo pedido.
+El historial se genera al dar de alta el pedido y cambiar su estado. Desde el ajuste del 18 de septiembre de 2026, GASTOS puede vincularse opcionalmente con PEDIDOS mediante `pedido_id`. Un pedido puede tener varios gastos; cada gasto corresponde a cero o un pedido. Los gastos generales mantienen `pedido_id = NULL`. auth.users pertenece a Supabase; no se creó ni modificó esa tabla. Una cotización vinculada a una venta debe pertenecer al mismo pedido.
+
+## Ajuste: gastos por pedido (18 de septiembre de 2026)
+
+- Migración: `supabase/migrations/202609180001_gastos_por_pedido.sql`, aplicada manualmente en el editor SQL. No repetirla sobre la base existente.
+- Pruebas: `supabase/tests/gastos_por_pedido.sql`, dentro de una transacción con `ROLLBACK`.
+- Resultado observado en Supabase: `OK: gasto general y por pedido; FK y RLS verificadas; datos revertidos`.
+- Justificación: RF-06 incluye insumos y costos fijos y variables. Se permite atribuir un gasto a un encargo y conservar gastos generales. Es una ampliación del diseño solicitada durante la revisión; el informe original no define esta relación.
+- La clave foránea impide referenciar pedidos inexistentes y restringe borrar un pedido con gastos asociados. Se añadió un índice para consultar costos por pedido. Los registros anteriores permanecen sin pedido y no se modificaron importes ni permisos.
+- No duplicar el mismo importe completo para repartir una compra entre varios pedidos. Un reparto detallado necesitaría un modelo adicional; esta versión atribuye cada gasto a un solo pedido o al negocio en general.
+- La app Android sigue siendo una demo local: seleccionar un pedido al registrar gastos queda pendiente para su integración con Supabase.
+- El Word del 16 de septiembre documenta la versión inicial. Este apartado registra el cambio posterior y debe incorporarse a la próxima entrega académica.
 
 ## Evidencia de ejecución
 
