@@ -2,9 +2,24 @@
 
 Proyecto académico de Ingeniería de Software para una aplicación Android de gestión de una repostería.
 
+## Organización
+
+| Área | Carpeta | Rama de trabajo |
+| --- | --- | --- |
+| SQL, migraciones y pruebas de base de datos | [supabase/](supabase/README.md) | `codex/base-de-datos` |
+| Código Kotlin, pantallas y pruebas Android | [android/](android/README.md) | `codex/android` |
+| Informes, requisitos, diseño y guías | [docs/](docs/README.md) | `codex/documentacion` |
+| Generadores de documentación | [scripts/](scripts/README.md) | `codex/documentacion` |
+
+`main` reúne los avances revisados de las tres áreas. `codex/primer-informe` conserva el punto de partida anterior a esta organización, incluyendo el informe, las tablas y el prototipo que ya habíamos preparado.
+
+Las carpetas indican dónde guardar cada archivo. Las ramas separan los cambios en desarrollo y parten de una base completa común. Al crearlas tienen el mismo contenido; no son tres copias aisladas del proyecto.
+
+Consulta [cómo cambiar de rama y unir avances](CONTRIBUTING.md).
+
 ## Base del proyecto
 
-Esta rama reúne el primer informe, la base de datos inicial y el código de un prototipo Android local. La integración Android con Supabase sigue pendiente.
+El proyecto reúne el primer informe, la base de datos inicial y el código de un prototipo Android local. La integración Android con Supabase sigue pendiente. La rama `main` representa la versión integrada actual, no una aplicación terminada para producción.
 
 - [Análisis del primer informe](docs/informe-01/analisis.md): objetivos, requisitos, dudas y propuesta de inicio.
 - [Propuesta técnica](docs/propuesta-tecnica.md): evaluación académica, comparación de tecnologías y alcance recomendado.

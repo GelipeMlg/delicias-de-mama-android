@@ -1,5 +1,7 @@
 # Delicias de Mamá para Android
 
+Rama de trabajo: **`codex/android`**. El código editable está en esta carpeta; las instrucciones y evidencias se mantienen en `docs/`. Consulta la [guía de ramas](../CONTRIBUTING.md) para integrar avances en `main`.
+
 Primera versión de demostración en Kotlin y Jetpack Compose. Abrir esta carpeta en Android Studio mediante **Open**; no crear otro proyecto ni copiar archivos uno por uno.
 
 ## Qué permite probar
