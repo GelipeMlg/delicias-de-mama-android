@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cl.deliciasdemama.app.CatalogChangesTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-01T18:52:25.502Z" hostname="FELIXPCGAMER" time="0.007">
+  <properties/>
+  <testcase name="duplicateIdsAreRejected" classname="cl.deliciasdemama.app.CatalogChangesTest" time="0.001"/>
+  <testcase name="newProductHasNoPreviousValue" classname="cl.deliciasdemama.app.CatalogChangesTest" time="0.005"/>
+  <testcase name="unchangedAndAlreadyArchivedProductsDoNotWrite" classname="cl.deliciasdemama.app.CatalogChangesTest" time="0.0"/>
+  <testcase name="editKeepsPreviousValueForConflictDetection" classname="cl.deliciasdemama.app.CatalogChangesTest" time="0.0"/>
+  <testcase name="deleteArchivesInsteadOfLosingReferences" classname="cl.deliciasdemama.app.CatalogChangesTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,381 @@
+{
+  "fecha": "2026-10-06",
+  "nota": "Copias documentales. Hash SHA-256 para comprobar integridad; no incluye archivos nuevos de revisión.",
+  "archivos": [
+    {
+      "archivo": "01 Pautas/INFOGRAFÍA__REGLA_PRESENTACIONES.pdf",
+      "origen": "D:\\descargas\\evaluaciones proyecto integrado\\INFOGRAFÍA__REGLA_PRESENTACIONES.pdf",
+      "sha256": "6473ddc50c5989157319bfb13bdef935056ced617a9a40c43d39568d7b067763"
+    },
+    {
+      "archivo": "01 Pautas/TIHV43_GUÍA_ABPRO_U1.docx",
+      "origen": "D:\\descargas\\evaluaciones proyecto integrado\\TIHV43_GUÍA_ABPRO_U1.docx",
+      "sha256": "69566a8ff0ef263b871ae476cd917ad8db4a8ce3845cea45988b22e194425c69"
+    },
+    {
+      "archivo": "01 Pautas/TIHV43_GUÍA_ABPRO_U2.docx",
+      "origen": "D:\\descargas\\evaluaciones proyecto integrado\\TIHV43_GUÍA_ABPRO_U2.docx",
+      "sha256": "7c0eab45cecfdca59c38bbeef0749f63f73601cb9934e50800d91ac099acb710"
+    },
+    {
+      "archivo": "01 Pautas/TIHV43_GUÍA_ABPRO_U3.docx",
+      "origen": "D:\\descargas\\evaluaciones proyecto integrado\\TIHV43_GUÍA_ABPRO_U3.docx",
+      "sha256": "21b9c2b81739394a9abcfe52b275f206023192cc5f06938ea054abe2d65b790a"
+    },
+    {
+      "archivo": "02 Informes Word/Informe_Delicias_de_Mama_Incremental_Nube_Continuidad.docx",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\entregables\\Informe_Delicias_de_Mama_Incremental_Nube_Continuidad.docx",
+      "sha256": "cbd078e19f26baa9a872ec607a5b0283b5b7992f85b5875af09c2360cd4606d8"
+    },
+    {
+      "archivo": "02 Informes Word/Informe_Diagnostico_Proyecto_Integrado_Delicias_de_Mama.docx",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\entregables\\Informe_Diagnostico_Proyecto_Integrado_Delicias_de_Mama.docx",
+      "sha256": "2256aeee6092cbd04e8ac2664b259b619ae760b630e712af2c4faa7c078dc5e1"
+    },
+    {
+      "archivo": "02 Informes Word/Resumen_base_de_datos_Delicias_de_Mama.docx",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\entregables\\Resumen_base_de_datos_Delicias_de_Mama.docx",
+      "sha256": "94ea013c7ada884b924c29d4fb3da41cf1d14f04ed405aa30fa98ea8b9f6efa2"
+    },
+    {
+      "archivo": "02 Informes Word/Original/InformeTrabajoIngSoft(V2).docx",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\informe-01\\original\\InformeTrabajoIngSoft(V2).docx",
+      "sha256": "964f599120b00ba992e14576661f74731bf6b4563083067f588ea1cb3790deec"
+    },
+    {
+      "archivo": "03 Documentacion/docs/autenticacion.md",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\autenticacion.md",
+      "sha256": "292d8f928332dcbdb8593bb1480314d954cd22b2d126cdb21816d3da0c7669fd"
+    },
+    {
+      "archivo": "03 Documentacion/docs/base-de-datos.md",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\base-de-datos.md",
+      "sha256": "35bd705d361e41f4a8376aadcd3d9839d8ab98573a54fe1f510eb29f3321ce22"
+    },
+    {
+      "archivo": "03 Documentacion/docs/ejecucion-android-studio.md",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\ejecucion-android-studio.md",
+      "sha256": "25d24c8a8d0a5e7b671b0bd29cf42d8185405f2e12e6ea766824c393bd99919e"
+    },
+    {
+      "archivo": "03 Documentacion/docs/estado-actual.md",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\estado-actual.md",
+      "sha256": "cd9a6684184a92be52b659e1bbc1d0ef6e8162ca0c897b2eae72574fa8cab3f4"
+    },
+    {
+      "archivo": "03 Documentacion/docs/firebase-notificaciones.md",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\firebase-notificaciones.md",
+      "sha256": "bc437c3f52301a40922f4d5e6e3f7dc8e52477ef78c24f4d5349d10f55057717"
+    },
+    {
+      "archivo": "03 Documentacion/docs/fotos-productos.md",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\fotos-productos.md",
+      "sha256": "240fd7a7ea150a5e31f6bb88cc0dd1263eb87e36adfe212d2ae936873f345f56"
+    },
+    {
+      "archivo": "03 Documentacion/docs/guia-android.md",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\guia-android.md",
+      "sha256": "4dfbed41448a217109f00e828a3bb69c2f8f845bb16deb5bb52cd2687c158aa3"
+    },
+    {
+      "archivo": "03 Documentacion/docs/incremento-pedidos-notificaciones.md",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\incremento-pedidos-notificaciones.md",
+      "sha256": "a50c4f2fd78f6a85a2f45ecd54c15b15a0b6ec755b0723c671323c2727d7ee14"
+    },
+    {
+      "archivo": "03 Documentacion/docs/interfaz-crud-agenda.md",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\interfaz-crud-agenda.md",
+      "sha256": "3b662db420ae884fa38f783499e91068cf785201abc106e3fb4799672bd653f1"
+    },
+    {
+      "archivo": "03 Documentacion/docs/mejoras-pedidos-octubre.md",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\mejoras-pedidos-octubre.md",
+      "sha256": "aacab2ae9b53a6ef024301b4aab4e7f23a9a5977bc9ede7ddb4ca2ed317bd9d1"
+    },
+    {
+      "archivo": "03 Documentacion/docs/plan-implementacion.md",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\plan-implementacion.md",
+      "sha256": "fb6756eddaca3bafe10d75581ac83ce3da07bf571cd71761afeb518f9e020c96"
+    },
+    {
+      "archivo": "03 Documentacion/docs/propuesta-tecnica.md",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\propuesta-tecnica.md",
+      "sha256": "0806b61a64956cfedebf7a6f0835135da42f4621ae913aac75321100528d81c5"
+    },
+    {
+      "archivo": "03 Documentacion/docs/README.md",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\README.md",
+      "sha256": "51fac9e9349863266b5eb6c6bca1be0bdbb0fa828ec6361e5d33fbf0db900dff"
+    },
+    {
+      "archivo": "03 Documentacion/docs/respaldo-github.md",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\respaldo-github.md",
+      "sha256": "4e8e036cf18cb88f038e81bcef391bdac78e093b56d4c44088b716680166a044"
+    },
+    {
+      "archivo": "03 Documentacion/docs/supabase-en-vivo.md",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\supabase-en-vivo.md",
+      "sha256": "5c9b5d943d81b0ffa2e4c49ca505c88c9a51b6e36181d5803d0c14fc75924c4c"
+    },
+    {
+      "archivo": "03 Documentacion/docs/supabase.md",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\supabase.md",
+      "sha256": "4edd48e48f1583fc967be9983522ede1ef1bc62836ccad5080f71e7f95de4d80"
+    },
+    {
+      "archivo": "03 Documentacion/docs/verificacion-android.md",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\verificacion-android.md",
+      "sha256": "ab71042757d5a3ef325c4b24d65f3e6b85c6f92c537ef627253107ea76ded8a0"
+    },
+    {
+      "archivo": "03 Documentacion/docs/diseno/prompt-wireframes.txt",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\diseno\\prompt-wireframes.txt",
+      "sha256": "641deaf59fd783ebc86021a5f7c1a8dc8294fdf2e60431ec3dddb44e345ca471"
+    },
+    {
+      "archivo": "03 Documentacion/docs/diseno/README.md",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\diseno\\README.md",
+      "sha256": "c251d1799eb21080aee01bd87fc88cc0bebf22aea6f5af73b687d3933581217d"
+    },
+    {
+      "archivo": "03 Documentacion/docs/diseno/wireframes-delicias-mama.png",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\diseno\\wireframes-delicias-mama.png",
+      "sha256": "7b338667550bc549cad045c2f045956f11212acbd0791daf66c470782545e7b2"
+    },
+    {
+      "archivo": "03 Documentacion/docs/informe-01/analisis.md",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\informe-01\\analisis.md",
+      "sha256": "49cc4038fb5a3146bff4d4aaf8a94959a706e9e5e799fab25af805bbfb99044c"
+    },
+    {
+      "archivo": "03 Documentacion/docs/informe-01/texto-extraido.txt",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\informe-01\\texto-extraido.txt",
+      "sha256": "107a056913db316abb3df249e14bb3ebe1445b50761a28a9c245a8cb2263d92f"
+    },
+    {
+      "archivo": "03 Documentacion/docs/diseno/capturas/catalogo.png",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\diseno\\capturas\\catalogo.png",
+      "sha256": "de64be6588aad71f41049e536a5725d03b16ed2cf96879f472de2293763c68a3"
+    },
+    {
+      "archivo": "03 Documentacion/docs/diseno/capturas/finanzas.png",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\diseno\\capturas\\finanzas.png",
+      "sha256": "d9540e075b42ed1decedbd7632fcd896b7841750fabac6c80bafcecc17665265"
+    },
+    {
+      "archivo": "03 Documentacion/docs/informe-01/diagramas/image1.jpg",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\informe-01\\diagramas\\image1.jpg",
+      "sha256": "6fded95330f1936270f5cbc2f51950d4055a695ee6a7c39e6ae83ef0e674b464"
+    },
+    {
+      "archivo": "03 Documentacion/docs/informe-01/diagramas/image2.png",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\informe-01\\diagramas\\image2.png",
+      "sha256": "0150bad35a5a72b6dbf2209d01dae07925b0a6ea00a1a263b2a85d9db1a4c78c"
+    },
+    {
+      "archivo": "03 Documentacion/docs/informe-01/diagramas/image3.png",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\informe-01\\diagramas\\image3.png",
+      "sha256": "97b22abc8e779721d7d1f559668c9d0e58d3814291872b80028489cb4ddd32c4"
+    },
+    {
+      "archivo": "03 Documentacion/docs/informe-01/diagramas/image4.png",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\informe-01\\diagramas\\image4.png",
+      "sha256": "a8d49308ff2d0443f558ef4bc281e7a490e1a19eea0d2099d2f8be0dea8f678e"
+    },
+    {
+      "archivo": "03 Documentacion/docs/informe-01/diagramas/image5.png",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\informe-01\\diagramas\\image5.png",
+      "sha256": "a926eecde4b840d92e4c70ca0cbbb6d06b42d07c1a14dc3fca561757ec32f16a"
+    },
+    {
+      "archivo": "03 Documentacion/android/README.md",
+      "origen": "D:\\dev\\Delicias de mamá\\android\\README.md",
+      "sha256": "6ce82a8d42f80caf99f0d3ed6651d4757d9e7930aa96de497c82c422b2c5b4fa"
+    },
+    {
+      "archivo": "03 Documentacion/android/README_ADB.md",
+      "origen": "D:\\dev\\Delicias de mamá\\android\\README_ADB.md",
+      "sha256": "3278df24be2e6ec2fdaba1087824ade87cc29dc064cfec3c0eef07d671a25dda"
+    },
+    {
+      "archivo": "03 Documentacion/README.md",
+      "origen": "D:\\dev\\Delicias de mamá\\README.md",
+      "sha256": "6273b4aa16bd6ec6b829f2dc30e29008a1d571e038fc2d1d777adbc82fa17bdb"
+    },
+    {
+      "archivo": "03 Documentacion/CONTRIBUTING.md",
+      "origen": "D:\\dev\\Delicias de mamá\\CONTRIBUTING.md",
+      "sha256": "1a09cbc8d125bbf090a13b35157d9b97ff508e08fa3cab715d1b5e5ab9bb71c1"
+    },
+    {
+      "archivo": "03 Documentacion/supabase/config.toml",
+      "origen": "D:\\dev\\Delicias de mamá\\supabase\\config.toml",
+      "sha256": "bd2e9d1f3cbabfb3cf95fab637cb51980437d06f086eaee71ae28948307ad5cc"
+    },
+    {
+      "archivo": "03 Documentacion/supabase/README.md",
+      "origen": "D:\\dev\\Delicias de mamá\\supabase\\README.md",
+      "sha256": "c94526236e725e4e5d9a6b5ced59755b033336c83c2e2d243f74174fa9bb32f7"
+    },
+    {
+      "archivo": "03 Documentacion/supabase/admin/asignar_duena.sql",
+      "origen": "D:\\dev\\Delicias de mamá\\supabase\\admin\\asignar_duena.sql",
+      "sha256": "349f4fc9bc4b8848c6cd0108d9d6b65f952968e628ce0cb09f26aab5ef96fa1f"
+    },
+    {
+      "archivo": "03 Documentacion/supabase/migrations/202609160001_base_inicial.sql",
+      "origen": "D:\\dev\\Delicias de mamá\\supabase\\migrations\\202609160001_base_inicial.sql",
+      "sha256": "f33ae760f21737459cba0f0bd80393c0ab943b2a100c8cbf3f1019ffc166f78c"
+    },
+    {
+      "archivo": "03 Documentacion/supabase/migrations/202609180001_gastos_por_pedido.sql",
+      "origen": "D:\\dev\\Delicias de mamá\\supabase\\migrations\\202609180001_gastos_por_pedido.sql",
+      "sha256": "fc9809933abf6dc5e7220b808d8b5054008961f53fcbc36217a3d5db806f1071"
+    },
+    {
+      "archivo": "03 Documentacion/supabase/migrations/202609220001_acceso_duena.sql",
+      "origen": "D:\\dev\\Delicias de mamá\\supabase\\migrations\\202609220001_acceso_duena.sql",
+      "sha256": "40d0ab9a561b2832c8e63ac6b18f7cf0b3e4985b9c7c20708bba195a1e5fa401"
+    },
+    {
+      "archivo": "03 Documentacion/supabase/migrations/202609230001_catalogo_conectado.sql",
+      "origen": "D:\\dev\\Delicias de mamá\\supabase\\migrations\\202609230001_catalogo_conectado.sql",
+      "sha256": "f04e10e6a3114ae810923b678f63d6b9028c5922b0e0c870109cb7c65d0e4c96"
+    },
+    {
+      "archivo": "03 Documentacion/supabase/migrations/202609260001_productos_sabores.sql",
+      "origen": "D:\\dev\\Delicias de mamá\\supabase\\migrations\\202609260001_productos_sabores.sql",
+      "sha256": "a263df77c87a41d8474dfaa11cec4d4380a4c88098dfdcbb74655f382e9acf66"
+    },
+    {
+      "archivo": "03 Documentacion/supabase/migrations/202609260002_pedidos_compartidos.sql",
+      "origen": "D:\\dev\\Delicias de mamá\\supabase\\migrations\\202609260002_pedidos_compartidos.sql",
+      "sha256": "7dccd282bc87959e35f6128aa75755cbb267b77d6a1535ea419f25c58bcdfcdf"
+    },
+    {
+      "archivo": "03 Documentacion/supabase/migrations/202609290001_fotos_productos.sql",
+      "origen": "D:\\dev\\Delicias de mamá\\supabase\\migrations\\202609290001_fotos_productos.sql",
+      "sha256": "601489a9d2c709f4fcb00b5a629f5cf3e850a6f9127a692603b4c946f597f718"
+    },
+    {
+      "archivo": "03 Documentacion/supabase/tests/acceso_duena.sql",
+      "origen": "D:\\dev\\Delicias de mamá\\supabase\\tests\\acceso_duena.sql",
+      "sha256": "741737353e60414ea1b63aa0960772016ac17c3cc08a24aefcbd48d54efff1e7"
+    },
+    {
+      "archivo": "03 Documentacion/supabase/tests/base_inicial.sql",
+      "origen": "D:\\dev\\Delicias de mamá\\supabase\\tests\\base_inicial.sql",
+      "sha256": "ce045792eef74cdabc28748756e763e73469d779b4d085c31d1df1beab381d01"
+    },
+    {
+      "archivo": "03 Documentacion/supabase/tests/catalogo_conectado.sql",
+      "origen": "D:\\dev\\Delicias de mamá\\supabase\\tests\\catalogo_conectado.sql",
+      "sha256": "84d7fddf06a941643ee6fe34442c7faefc1d21e4415b8eb1b585afc852e97003"
+    },
+    {
+      "archivo": "03 Documentacion/supabase/tests/fotos_productos.sql",
+      "origen": "D:\\dev\\Delicias de mamá\\supabase\\tests\\fotos_productos.sql",
+      "sha256": "5cf93ae9aba521a144673c23c17b83a2bf52d6e3fa0d63b7ef4fd148c82f1460"
+    },
+    {
+      "archivo": "03 Documentacion/supabase/tests/gastos_por_pedido.sql",
+      "origen": "D:\\dev\\Delicias de mamá\\supabase\\tests\\gastos_por_pedido.sql",
+      "sha256": "c5fa0777f6ca36e554a7355ae0d12122df16204faa3f10386b204a9ad2fae14b"
+    },
+    {
+      "archivo": "03 Documentacion/supabase/tests/productos_sabores.sql",
+      "origen": "D:\\dev\\Delicias de mamá\\supabase\\tests\\productos_sabores.sql",
+      "sha256": "ae263ef1adee1a73b4a6d376012178a7de1bfe3115ce92e06a127db4cb03df04"
+    },
+    {
+      "archivo": "03 Documentacion/supabase/functions/enviar-notificaciones/index.ts",
+      "origen": "D:\\dev\\Delicias de mamá\\supabase\\functions\\enviar-notificaciones\\index.ts",
+      "sha256": "810f834dc37aede1370a0aa6dd94d5e7861252eda5cd074669758ba619f5d1a0"
+    },
+    {
+      "archivo": "04 Evidencias/Pruebas unitarias/TEST-cl.deliciasdemama.app.AccessRulesTest.xml",
+      "origen": "D:\\dev\\Delicias de mamá\\android\\app\\build\\test-results\\testDebugUnitTest\\TEST-cl.deliciasdemama.app.AccessRulesTest.xml",
+      "sha256": "0785f9687b543cd0f497575e0c4eabb475979575a4f7337af59af352f58b89a0"
+    },
+    {
+      "archivo": "04 Evidencias/Pruebas unitarias/TEST-cl.deliciasdemama.app.CatalogChangesTest.xml",
+      "origen": "D:\\dev\\Delicias de mamá\\android\\app\\build\\test-results\\testDebugUnitTest\\TEST-cl.deliciasdemama.app.CatalogChangesTest.xml",
+      "sha256": "b75a487c159ff59e6407ccb3bba3e2c3ca5fb0caaa0226eda420f6df93f22c48"
+    },
+    {
+      "archivo": "04 Evidencias/Pruebas unitarias/TEST-cl.deliciasdemama.app.OrderPresentationTest.xml",
+      "origen": "D:\\dev\\Delicias de mamá\\android\\app\\build\\test-results\\testDebugUnitTest\\TEST-cl.deliciasdemama.app.OrderPresentationTest.xml",
+      "sha256": "d21bebc2e9bb9d83feb3231746e45fb079506c5218366e26bb9206b87d9a1e7b"
+    },
+    {
+      "archivo": "04 Evidencias/Pruebas unitarias/TEST-cl.deliciasdemama.app.ProductFlavorsTest.xml",
+      "origen": "D:\\dev\\Delicias de mamá\\android\\app\\build\\test-results\\testDebugUnitTest\\TEST-cl.deliciasdemama.app.ProductFlavorsTest.xml",
+      "sha256": "39344c81eb7b3c30d737a2aebdcba7b336cc2cda3bf570e46475365c51c0f67f"
+    },
+    {
+      "archivo": "04 Evidencias/Pruebas unitarias/TEST-cl.deliciasdemama.app.ShopRulesTest.xml",
+      "origen": "D:\\dev\\Delicias de mamá\\android\\app\\build\\test-results\\testDebugUnitTest\\TEST-cl.deliciasdemama.app.ShopRulesTest.xml",
+      "sha256": "0077e8c77904f9c285cda551f02a2272bd8d06faae6033c8674de547be1d3c16"
+    },
+    {
+      "archivo": "04 Evidencias/Reporte HTML/index.html",
+      "origen": "D:\\dev\\Delicias de mamá\\android\\app\\build\\reports\\tests\\testDebugUnitTest\\index.html",
+      "sha256": "5f5bceecaff693dde64b6ddcfcaa5906c641063af2abedfc144a7d73ed844e92"
+    },
+    {
+      "archivo": "04 Evidencias/Reporte HTML/cl.deliciasdemama.app.AccessRulesTest/index.html",
+      "origen": "D:\\dev\\Delicias de mamá\\android\\app\\build\\reports\\tests\\testDebugUnitTest\\cl.deliciasdemama.app.AccessRulesTest\\index.html",
+      "sha256": "8213084831e456b35976a92e6aeda2254ea7d6cfe908d6550c45c1e8a51b2f60"
+    },
+    {
+      "archivo": "04 Evidencias/Reporte HTML/cl.deliciasdemama.app.CatalogChangesTest/index.html",
+      "origen": "D:\\dev\\Delicias de mamá\\android\\app\\build\\reports\\tests\\testDebugUnitTest\\cl.deliciasdemama.app.CatalogChangesTest\\index.html",
+      "sha256": "38e24c624b0df17584fdc3fd01f1153aa81ffa6b405d6eaaf854bbe174af46d3"
+    },
+    {
+      "archivo": "04 Evidencias/Reporte HTML/cl.deliciasdemama.app.OrderPresentationTest/index.html",
+      "origen": "D:\\dev\\Delicias de mamá\\android\\app\\build\\reports\\tests\\testDebugUnitTest\\cl.deliciasdemama.app.OrderPresentationTest\\index.html",
+      "sha256": "30679a21077b1c0947c95cc29c40a7c7adb291eddc832744a30f915fdd99cccb"
+    },
+    {
+      "archivo": "04 Evidencias/Reporte HTML/cl.deliciasdemama.app.ProductFlavorsTest/index.html",
+      "origen": "D:\\dev\\Delicias de mamá\\android\\app\\build\\reports\\tests\\testDebugUnitTest\\cl.deliciasdemama.app.ProductFlavorsTest\\index.html",
+      "sha256": "0713ba8b12614b48d100af40696ca4a9a3be7f43d350ceb9ad42a0a7697a0a28"
+    },
+    {
+      "archivo": "04 Evidencias/Reporte HTML/cl.deliciasdemama.app.ShopRulesTest/index.html",
+      "origen": "D:\\dev\\Delicias de mamá\\android\\app\\build\\reports\\tests\\testDebugUnitTest\\cl.deliciasdemama.app.ShopRulesTest\\index.html",
+      "sha256": "d52b30fce55f742442e88ec51e3db265e174216ae91963578e7b90cade6b79e2"
+    },
+    {
+      "archivo": "04 Evidencias/Reporte HTML/css/base-style.css",
+      "origen": "D:\\dev\\Delicias de mamá\\android\\app\\build\\reports\\tests\\testDebugUnitTest\\css\\base-style.css",
+      "sha256": "57e77adec7c2caa9fea27fe15eb69f426edb930cc59ec48158457d7d07dbe4b5"
+    },
+    {
+      "archivo": "04 Evidencias/Reporte HTML/css/style.css",
+      "origen": "D:\\dev\\Delicias de mamá\\android\\app\\build\\reports\\tests\\testDebugUnitTest\\css\\style.css",
+      "sha256": "caee7b8535e0ae835c5fa62c7d97d3d79621792a7e626ecf7cab6077db85f9d7"
+    },
+    {
+      "archivo": "04 Evidencias/Reporte HTML/js/report.js",
+      "origen": "D:\\dev\\Delicias de mamá\\android\\app\\build\\reports\\tests\\testDebugUnitTest\\js\\report.js",
+      "sha256": "1bbaf1762dcdd4f5b1f8f7ad9b398d24e53fdf12f9ddcd4c4c785458ecf4badd"
+    },
+    {
+      "archivo": "04 Evidencias/Capturas historicas/catalogo.png",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\diseno\\capturas\\catalogo.png",
+      "sha256": "de64be6588aad71f41049e536a5725d03b16ed2cf96879f472de2293763c68a3"
+    },
+    {
+      "archivo": "04 Evidencias/Capturas historicas/finanzas.png",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\diseno\\capturas\\finanzas.png",
+      "sha256": "d9540e075b42ed1decedbd7632fcd896b7841750fabac6c80bafcecc17665265"
+    },
+    {
+      "archivo": "04 Evidencias/Prototipo conceptual/wireframes-delicias-mama.png",
+      "origen": "D:\\dev\\Delicias de mamá\\docs\\diseno\\wireframes-delicias-mama.png",
+      "sha256": "7b338667550bc549cad045c2f045956f11212acbd0791daf66c470782545e7b2"
+    }
+  ]
+}

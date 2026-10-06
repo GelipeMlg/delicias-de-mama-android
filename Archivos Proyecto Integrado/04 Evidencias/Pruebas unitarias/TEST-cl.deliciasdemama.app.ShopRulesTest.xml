@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cl.deliciasdemama.app.ShopRulesTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-10-01T18:52:25.544Z" hostname="FELIXPCGAMER" time="0.03">
+  <properties/>
+  <testcase name="invalidAmountsAndPastDatesAreRejected" classname="cl.deliciasdemama.app.ShopRulesTest" time="0.001"/>
+  <testcase name="pendingCancellationReleasesSlotAndCapacityCannotIgnoreRequests" classname="cl.deliciasdemama.app.ShopRulesTest" time="0.013"/>
+  <testcase name="quoteCorrectionRequiresAcceptanceAndKeepsOneSlot" classname="cl.deliciasdemama.app.ShopRulesTest" time="0.002"/>
+  <testcase name="deliveredSaleCanBeCorrectedWithoutChangingClosedQuoteOrCapacity" classname="cl.deliciasdemama.app.ShopRulesTest" time="0.002"/>
+  <testcase name="cancellationFreesCapacity" classname="cl.deliciasdemama.app.ShopRulesTest" time="0.001"/>
+  <testcase name="cannotReduceCapacityBelowConfirmedOrders" classname="cl.deliciasdemama.app.ShopRulesTest" time="0.001"/>
+  <testcase name="expenseCrudReplacesAmountAndDateWithoutDuplication" classname="cl.deliciasdemama.app.ShopRulesTest" time="0.001"/>
+  <testcase name="cannotAcceptOnBlockedDay" classname="cl.deliciasdemama.app.ShopRulesTest" time="0.001"/>
+  <testcase name="onlyOneOrderCanTakeTheLastSlot" classname="cl.deliciasdemama.app.ShopRulesTest" time="0.001"/>
+  <testcase name="productCrudAndRetirementPreserveOrderHistory" classname="cl.deliciasdemama.app.ShopRulesTest" time="0.001"/>
+  <testcase name="cannotDeliverTwice" classname="cl.deliciasdemama.app.ShopRulesTest" time="0.002"/>
+  <testcase name="manualSalesCrudAndInvalidFinancialInput" classname="cl.deliciasdemama.app.ShopRulesTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

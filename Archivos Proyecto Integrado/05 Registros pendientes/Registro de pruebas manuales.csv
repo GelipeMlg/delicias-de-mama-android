@@ -1,0 +1,13 @@
+ID;Escenario;Resultado esperado;Resultado observado;Estado;Fecha;Responsable;Dispositivo y version;Evidencia
+MAN-01;Cliente crea pedido y dueña consulta;Pedido compartido con detalles correctos;;PENDIENTE;;;;
+MAN-02;Dueña cotiza y cliente acepta;Monto y revisión vigentes y estado confirmado;;PENDIENTE;;;;
+MAN-03;Dueña cambia cotización durante revisión;Se bloquea aceptación de revisión anterior;;PENDIENTE;;;;
+MAN-04;Cancelar pedido;Cambio de estado y liberación del cupo;;PENDIENTE;;;;
+MAN-05;Entregar pedido;Estado entregado y registro financiero sin duplicación;;PENDIENTE;;;;
+MAN-06;CRUD de producto y foto desde dueña;Persistencia visible desde otro dispositivo;;PENDIENTE;;;;
+MAN-07;Cliente intenta operaciones de dueña y datos ajenos;Servidor deniega sin filtrar datos;;PENDIENTE;;;;
+MAN-08;Notificaciones con app en segundo plano;Aviso correcto sin duplicados para destinatario;;PENDIENTE;;;;
+MAN-09;Cerrar sesión o cambiar cuenta;No mostrar avisos ni datos de cuenta anterior;;PENDIENTE;;;;
+MAN-10;Dos solicitudes del último cupo;No exceder capacidad y rechazo comprensible;;PENDIENTE;;;;
+MAN-11;Interrupción de red al guardar;Error comprensible sin éxito falso ni duplicados al reintentar;;PENDIENTE;;;;
+MAN-12;Uso supervisado por la dueña;Registrar tareas completadas dificultades y comentarios reales;;PENDIENTE;;;;

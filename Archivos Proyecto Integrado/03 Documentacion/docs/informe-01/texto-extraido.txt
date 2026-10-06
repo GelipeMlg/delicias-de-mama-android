@@ -1,0 +1,378 @@
+
+
+
+
+Informe de Trabajo
+
+Delicias de Mamá
+
+
+
+
+
+
+
+
+
+NOMBRE: Felipe Alvarado, Matias Otero, Jafet LavadosCARRERA: Analista ProgramadorASIGNATURA: Ingeniería de SoftwarePROFESOR: Herminio Juan Mayorga ContrerasFECHA: 01-09-2026
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1 Introducción
+
+El presente informe corresponde a la fase inicial de desarrollo de software para la repostería Delicias de Mamá. En esta primera etapa, el objetivo principal es levantar, clasificar y estructurar las necesidades del negocio para proyectar la construcción de una aplicación móvil en plataforma Android.
+
+Contexto del negocio: Delicias de mamá es una Pyme especializada en repostería, enfocándose en Pasteles o cocteleria dulce desde 
+
+Público Objetivo: Clientes de la repostería (reservas/cotizaciones) y la dueña del negocio (gestión de ventas, gastos y agenda).
+
+Alcance Actual: Definición teórica, arquitectura de software proyectada y diagramación de casos de uso. (Las etapas de desarrollo de código, integración de base de datos y pruebas de software se ejecutarán en los informes posteriores).
+
+2 Técnicas de Levantamiento Utilizadas
+
+Dado que el proyecto se encuentra en su fase conceptual, se utilizaron las siguientes técnicas de ingeniería de requisitos:
+
+Entrevista de Relevamiento: Preguntas clave realizadas a la contraparte para entender el flujo manual de pedidos, manejo de stock e insumos.
+
+Observación Directa: Análisis de la mecánica de trabajo actual de la repostería para abstraer las reglas de negocio (ej. cómo se calculan las cotizaciones y la capacidad máxima de entrega diaria).
+
+1. Actores del Sistema y Roles Proyectados
+
+Cliente: Usuario final que interactúa con el catálogo, consultará la disponibilidad en el calendario, solicitará cotizaciones y registrará reservas.
+
+Dueña / Administradora: Usuario con privilegios para aprobar pedidos, bloquear/habilitar días en el calendario, registrar ingresos/egresos y gestionar la base de datos personal.
+
+2. Diagrama y Descripción de Casos de Uso (Fase Preliminar)
+
+CU-01: Consultar Disponibilidad y Reservar
+
+Actor: Cliente.
+
+Descripción: El cliente revisa el calendario interactivo, selecciona una fecha disponible y envía una solicitud de reserva adjuntando especificaciones del pedido.
+
+CU-02: Solicitar y Emitir Cotización
+
+Actor: Cliente / Dueña.
+
+Descripción: El cliente ingresa detalles de una torta/coctelería personalizada. La dueña recibe la notificación, calcula insumos y responde con el valor estimado.
+
+CU-03: Registrar Transacciones Financieras
+
+Actor: Dueña.
+
+Descripción: La dueña ingresa las ventas concretadas y las compras de insumos para mantener el balance actualizado en el almacenamiento interno.
+
+
+
+3. Tabla Clasificada de Requerimientos
+
+ID
+
+Categoría / Tipo
+
+Nombre del Requerimiento
+
+Descripción Detallada
+
+ 
+
+RF-01
+
+Funcional
+
+Sistema de Reservas
+
+La aplicación debe permitir a los clientes seleccionar productos del catálogo de repostería y coctelería dulce, especificando fecha y hora de entrega solicitada.
+
+RF-02
+
+Funcional
+
+Calendario de Disponibilidad Interactive
+
+El sistema debe incluir un calendario visual accesible tanto para el cliente como para la dueña, mostrando los días ocupados, bloqueados o disponibles para la recepción de nuevos pedidos.
+
+RF-03
+
+Funcional
+
+Personalización de Pedidos
+
+El usuario cliente podrá adjuntar especificaciones (sabores, rellenos, temáticas, restricciones alimentarias) al realizar una reserva de torta o coctelería.
+
+RF-04
+
+Funcional
+
+Módulo de Cotizaciones
+
+El sistema debe generar presupuestos estimados o permitir la solicitud de cotización personalizada para productos especiales antes de confirmar el pedido.
+
+RF-05
+
+Funcional
+
+Gestión y Control de Ventas
+
+La dueña debe poder registrar, consultar y filtrar las ventas diarias, semanales y mensuales realizadas por la repostería.
+
+
+
+RF-06
+
+Funcional
+
+Registro y Control de Gastos
+
+La aplicación debe incluir un apartado para ingresar compras de insumos, costos fijos y variables, permitiendo calcular la rentabilidad neta.
+
+RF-07
+
+Funcional
+
+Persistencia en Base de Datos Personal
+
+Toda la información generada (reservas, estados de disponibilidad del calendario, cotizaciones, transacciones) debe almacenarse de manera estructurada en una base de datos personal/dedicada.
+
+RNF-01
+
+No Funcional
+
+Plataforma y Compatibilidad
+
+La aplicación debe estar desarrollada nativamente para Android (compatible con versiones Android 8.0 Oreo en adelante).
+
+RNF-02
+
+No Funcional
+
+Seguridad y Privacidad
+
+Los datos personales de los clientes y registros financieros de la repostería deben estar protegidos y respaldados de forma segura.
+
+RNF-03
+
+No Funcional
+
+Usabilidad e Interfaz (UI/UX)
+
+La interfaz debe ser intuitiva, amigable y optimizada para pantallas táctiles de diversos tamaños de dispositivos móviles, resaltando claramente el estado de las fechas en el calendario.
+
+RNF-04
+
+No Funcional
+
+Rendimiento y Tiempo de Respuesta
+
+Las operaciones de consulta de disponibilidad en el calendario y guardado en la base de datos deben responder en un tiempo menor a 2 segundos bajo condiciones normales.
+
+
+
+4. Plan de Trabajo para la Siguiente Entrega
+
+Diseño de Interfaz (Wireframes / Mockups): Elaborar el diseño visual de las pantallas en Android Studio / Figma (especialmente la vista de calendario y formularios de cotización).
+
+Modelo Entidad-Relación (DER): Diseñar la estructura de tablas para la base de datos personal.
+
+Desarrollo del Prototipo: Iniciar la codificación de las primeras pantallas y la lógica de navegación.
+
+5. Calidad y Estándares ISO 12207
+
+Cómo la aplicamos en el proyecto 
+
+Aplicamos el estándar ISO/IEC/IEEE 12207 definiendo explícitamente los procesos del ciclo de vida del software para asegurar la calidad del producto:
+
+Proceso de Adquisición/Requisitos: Definición y validación rigurosa de las necesidades del negocio mediante la bitácora de requerimientos.
+
+Proceso de Diseño: Estructuración de la arquitectura de la app Android, diseño de la base de datos personal y elaboración de wireframes para la interfaz.
+
+Proceso de Implementación: Codificación modular en Kotlin/Android Studio siguiendo buenas prácticas de desarrollo.
+
+Proceso de Verificación y Calidad: Planificación de pruebas funcionales para asegurar que cada módulo (calendario, reservas, gastos) cumpla con los criterios de aceptación antes de su entrega.
+
+6. Metodología Incremental (Scrum)
+
+Proyección del Desarrollo en Incrementos para "Delicias de Mamá" Basado en las necesidades típicas de una repostería, el informe estructura la construcción de la aplicación Android en las siguientes etapas consecutivas:
+
+ Incremento I: Catálogo e Información (Mínimo Producto Viable):
+
+ Objetivo: Posicionar la marca en los teléfonos Android de los clientes.
+
+  Funcionalidades: Registro/Visualización del menú de pasteles, precios, horarios de atención, dirección y botón de llamada directa.
+
+Incremento II: Gestión de Pedidos Básica:
+
+Objetivo: Permitir la interacción comercial sin automatizar el pago.
+
+ Funcionalidades: Carrito de compras, formulario de datos de entrega y envío automático de la orden de compra a la repostería a través de un mensaje estructurado de WhatsApp o correo electrónico.
+
+Incremento III: Automatización e Historial:
+
+ Objetivo: Agilizar la operación interna y fidelizar al usuario.
+
+ Funcionalidades: Creación de perfiles de cliente, almacenamiento de direcciones frecuentes, pasarela de pago integrada (tarjetas de crédito/débito) y pasarela de notificaciones push sobre el estado del pastel (ej: "Tu pedido está en el horno").
+
+
+
+Incremento IV: Módulo Administrativo y Fidelización:
+
+ Objetivo: Optimizar la gestión del negocio y aumentar las ventas recurrentes.
+
+Funcionalidades: Panel interno en la app para que los administradores de Delicias de Mamá cambien stock o precios en tiempo real, y un sistema acumulador de puntos por compras.
+
+ Ventajas de la metodología Incremental
+
+ Una de las principales ventajas de la metodología incremental es la flexibilidad a la hora de hacer el proyecto a la vez de poder hacer entregas de pruebas incrementales, también con esta metodología podremos detectar errores de manera oportuna y arreglarlos de manera sencilla y rápida.
+
+Desventajas de la Metodología Incremental
+
+por ser algo que cambia con el tiempo, es difícil predecir los costes que puede tener este proyecto o qué presupuesto se le tiene que dar al mismo y si el Product Owner no pone un alto y no es firme, puede que se coloquen requerimientos que no hayan estado al principio de la bitácora de requerimientos.
+
+¿Y Por qué es el que más Conviene?
+
+porque reduce drásticamente las barreras de entrada al mundo digital, protegiendo la salud financiera y la operación diaria de un negocio tradicional.
+
+Para una Inversión Financiera Bajo Control (Pago en Cómodas Cuotas)
+
+El problema tradicional: El modelo en cascada exige pagar por el 100% del software por adelantado (catálogo, pasarela de pagos, geolocalización, perfiles, etc.) sin saber si los clientes usarán la app.
+
+La solución incremental: Permite financiar el proyecto por etapas. La repostería solo invierte inicialmente en el Incremento 1 (Catálogo y contacto). 
+
+Una vez que este módulo empieza a digitalizar a los clientes y a generar interés, las mismas ganancias del negocio pueden financiar el desarrollo del Incremento 2 (Carrito y pedidos).
+
+Curva de Aprendizaje Suave para el Personal
+
+El problema tradicional: Entregar una aplicación con decenas de funciones de golpe puede saturar al personal de la repostería, que está acostumbrado a trabajar de forma manual (atención en mostrador, libretas de pedidos, etc.).
+
+La solución incremental: Permite que el equipo de Delicias de Mamá se adapte al cambio tecnológico de forma progresiva. 
+
+En la primera fase, solo deben aprender a revisar un catálogo en el teléfono.
+
+ En la segunda, aprenden a gestionar pedidos digitales. Para cuando se implemente el pago automático, el personal ya dominará la tecnología sin haber sufrido estrés operativo.
+
+
+
+Fundamentación del Tiempo: Se estiman 8 semanas para el proyecto completo. Al dividir el trabajo por funcionalidades, se garantiza un ritmo constante de avance y control de entregables en la asignatura. 
+
+Relaciones Clave:
+
+Cliente: Puede consultar el calendario, solicitar cotizaciones y realizar reservas.
+
+Dueña: Administra la disponibilidad del calendario, responde cotizaciones y gestiona los registros de ventas y gastos.
+
+Persistencia: Todos los casos de uso principales se conectan con el almacenamiento en la base de datos personal.
+
+7. Viabilidad del Proyecto
+
+Viabilidad Técnica: Alta. La aplicación se desarrollará en Android Studio utilizando lenguaje Kotlin y persistencia en base de datos personal. Las herramientas son gratuitas, de código abierto y estándar en la industria.
+
+Viabilidad Económica: Alta. Los costos de desarrollo son mínimos al tratarse de un proyecto académico. No requiere servidores de pago costosos en la etapa inicial al apoyarse en una base de datos local o de bajo costo.
+
+Viabilidad Operativa: Alta. Resuelve un problema real del negocio Delicias de Mamá: elimina los errores de agenda, agiliza las cotizaciones y da control sobre la rentabilidad neta (ventas vs gastos).
+
+8. Diagrama UML
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9. Diagrama de Casos de Uso
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10. Conclusión
+
+El desarrollo del proyecto "Delicias de Mamá" representa una solución integral para la digitalización de una PYME gastronómica, transitando desde un modelo manual susceptible a errores de agenda e inexactitud financiera hacia un sistema automatizado en plataforma Android.
+
+A través de la correcta definición del ciclo de vida del software respaldado por el estándar ISO/IEC/IEEE 12207 y la adopción de una metodología ágil (Scrum adaptado), se garantiza un avance controlado y flexible durante las fases académicas de desarrollo. La integración del módulo de calendario, el sistema de cotizaciones y el control financiero centralizados en una base de datos personal demuestran la viabilidad técnica, económica y operativa del proyecto, sentando las bases para una implementación exitosa en las siguientes entregas.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

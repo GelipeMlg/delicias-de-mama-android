@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cl.deliciasdemama.app.AccessRulesTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-01T18:52:25.353Z" hostname="FELIXPCGAMER" time="0.144">
+  <properties/>
+  <testcase name="ownerCanManageAllExistingOrders" classname="cl.deliciasdemama.app.AccessRulesTest" time="0.116"/>
+  <testcase name="projectionDoesNotDeletePrivateRepositoryData" classname="cl.deliciasdemama.app.AccessRulesTest" time="0.001"/>
+  <testcase name="legacyOrdersNeverBecomePropertyOfFirstLogin" classname="cl.deliciasdemama.app.AccessRulesTest" time="0.001"/>
+  <testcase name="anonymousProjectionHidesAllPrivateData" classname="cl.deliciasdemama.app.AccessRulesTest" time="0.001"/>
+  <testcase name="clientOnlySeesOwnOrdersAndNoFinance" classname="cl.deliciasdemama.app.AccessRulesTest" time="0.0"/>
+  <testcase name="passwordLimitsUseUtf8BytesForBcrypt" classname="cl.deliciasdemama.app.AccessRulesTest" time="0.011"/>
+  <testcase name="guestCannotBecomeOwner" classname="cl.deliciasdemama.app.AccessRulesTest" time="0.001"/>
+  <testcase name="clientCannotModifyOtherClientsOrLegacyOrders" classname="cl.deliciasdemama.app.AccessRulesTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

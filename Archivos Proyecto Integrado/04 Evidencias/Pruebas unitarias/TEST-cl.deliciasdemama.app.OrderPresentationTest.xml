@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cl.deliciasdemama.app.OrderPresentationTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-01T18:52:25.514Z" hostname="FELIXPCGAMER" time="0.009">
+  <properties/>
+  <testcase name="rejectsChangedPriceEvenIfRevisionIsUnchanged" classname="cl.deliciasdemama.app.OrderPresentationTest" time="0.005"/>
+  <testcase name="rejectsNewRevisionEvenAtSamePrice" classname="cl.deliciasdemama.app.OrderPresentationTest" time="0.001"/>
+  <testcase name="historyContainsOnlyClosedOrders" classname="cl.deliciasdemama.app.OrderPresentationTest" time="0.0"/>
+  <testcase name="rejectsDifferentOrderAndMissingQuote" classname="cl.deliciasdemama.app.OrderPresentationTest" time="0.001"/>
+  <testcase name="acceptsOnlyTheReviewedQuote" classname="cl.deliciasdemama.app.OrderPresentationTest" time="0.0"/>
+  <testcase name="rejectsCancelledOrAlreadyConfirmedOrder" classname="cl.deliciasdemama.app.OrderPresentationTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

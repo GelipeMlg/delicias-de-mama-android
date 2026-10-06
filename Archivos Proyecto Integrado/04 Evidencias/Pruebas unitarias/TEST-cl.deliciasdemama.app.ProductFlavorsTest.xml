@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cl.deliciasdemama.app.ProductFlavorsTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-01T18:52:25.526Z" hostname="FELIXPCGAMER" time="0.014">
+  <properties/>
+  <testcase name="oneFlavorAndOneFillingAndPortionAreAccepted" classname="cl.deliciasdemama.app.ProductFlavorsTest" time="0.01"/>
+  <testcase name="unknownFlavorIsRejected" classname="cl.deliciasdemama.app.ProductFlavorsTest" time="0.001"/>
+  <testcase name="flavorsAreTrimmedAndDeduplicated" classname="cl.deliciasdemama.app.ProductFlavorsTest" time="0.0"/>
+  <testcase name="retiredProductCanStillBeSentForDeletion" classname="cl.deliciasdemama.app.ProductFlavorsTest" time="0.001"/>
+  <testcase name="portionsArePreservedWhenCakeModeIsDisabled" classname="cl.deliciasdemama.app.ProductFlavorsTest" time="0.0"/>
+  <testcase name="multipleAvailableFlavorsAreRejected" classname="cl.deliciasdemama.app.ProductFlavorsTest" time="0.001"/>
+  <testcase name="saltedProductDoesNotRequireFlavors" classname="cl.deliciasdemama.app.ProductFlavorsTest" time="0.0"/>
+  <testcase name="enabledFlavorsCannotBeEmpty" classname="cl.deliciasdemama.app.ProductFlavorsTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
