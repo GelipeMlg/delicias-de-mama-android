@@ -1,50 +1,31 @@
-# Delicias de Mamá para Android
+# Android: Delicias de Mamá
 
-Rama de trabajo: **`codex/android`**. El código editable está en esta carpeta; las instrucciones y evidencias se mantienen en `docs/`. Consulta la [guía de ramas](../CONTRIBUTING.md) para integrar avances en `main`.
-
-Primera versión de demostración en Kotlin y Jetpack Compose. Abrir esta carpeta en Android Studio mediante **Open**; no crear otro proyecto ni copiar archivos uno por uno.
-
-## Qué permite probar
-
-- Catálogo de ejemplo y personalización de solicitudes.
-- Calendario mensual, bloqueo de fechas y capacidad diaria.
-- Solicitar, cotizar, confirmar, cancelar y marcar un pedido como entregado.
-- Registrar gastos y consultar ventas de prueba por día, semana o mes.
-- Conservar los datos de prueba al cerrar la aplicación, en un archivo privado del dispositivo.
-
-El selector de vista cliente/dueña es para demostrar el flujo en un solo teléfono. **No es autenticación ni control de permisos.** No utilizar datos personales ni financieros reales. El APK se identifica como `cl.deliciasdemama.app.demo` y no tiene permiso de Internet. No realiza solicitudes a Supabase.
-
-Los tres productos y sus precios son ficticios. La capacidad de tres pedidos por día y el registro de venta al marcar entregado son reglas de demostración, pendientes de validar con la dueña. La app permite retiro; el despacho del esquema SQL se implementará después.
+Aplicación conectada a Supabase y Firebase, escrita en Kotlin con Jetpack Compose y Material 3.
 
 ## Abrir y ejecutar
 
-Consultar [la guía paso a paso](../docs/guia-android.md).
+1. Abrir `D:\dev\Delicias de mamá\android` en Android Studio (o la carpeta `android` de una nueva clonación).
+2. Usar JDK 21 para Gradle e instalar Android SDK 35. La configuración de compilación genera bytecode Java 17.
+3. Dejar que Android Studio configure `local.properties` con el SDK local. Este archivo no se sube a Git.
+4. Recuperar `app/google-services.json` desde Firebase, proyecto `deliciasdemama-da46b`, aplicación `cl.deliciasdemama.app.demo`. En este PC ya existe; se mantiene fuera del repositorio. No usar un JSON de cuenta de servicio en su lugar.
+5. Sincronizar Gradle, seleccionar el módulo `app` y un teléfono o emulador Android 8.0/API 26 o superior, y ejecutar Run.
+6. Iniciar sesión con una cuenta real de Supabase. La cuenta de dueña necesita el rol del servidor; registrar una cuenta normal no concede ese rol.
 
-Con JDK y Android SDK configurados, desde esta carpeta:
+La conexión usa la URL y clave publicable del cliente en `AuthRepository.kt`. Esta clave no concede permisos administrativos: la autorización depende de Auth, RLS y las RPC. Las contraseñas se verifican en Supabase Auth. Nunca introducir una clave `service_role` en Android.
+
+## Pruebas y APK
+
+Desde PowerShell, dentro de `android` y con Java 21 disponible:
 
 ```powershell
-.\gradlew.bat testDebugUnitTest
-.\gradlew.bat assembleDebug
+.\gradlew.bat :app:testDebugUnitTest :app:assembleDebug
 ```
 
-El APK se genera en `app/build/outputs/apk/debug/app-debug.apk`. Este archivo solo existirá después de una compilación satisfactoria.
+APK: `app/build/outputs/apk/debug/app-debug.apk`.
+Informes: `app/build/reports/tests/testDebugUnitTest/index.html`.
 
-## Estructura del código
+Conservar `-Dfile.encoding=COMPAT` en `gradle.properties`: corrige el lanzamiento del ejecutor de pruebas en Windows con la tilde de la ruta. No utilizar scripts antiguos que redirigen las salidas de compilación a AppData.
 
-| Archivo | Responsabilidad |
-| --- | --- |
-| app/src/main/java/cl/deliciasdemama/app/MainActivity.kt | Tema, navegación y pantallas Compose |
-| app/src/main/java/cl/deliciasdemama/app/Models.kt | Modelos y reglas del prototipo |
-| app/src/main/java/cl/deliciasdemama/app/LocalRepository.kt | Persistencia local mediante escritura atómica |
-| app/src/main/java/cl/deliciasdemama/app/ShopViewModel.kt | Estado de pantalla, validación y guardado fuera del hilo principal |
-| app/src/test/java/cl/deliciasdemama/app/ShopRulesTest.kt | Pruebas del flujo, cupos y cantidades |
+Sin `google-services.json`, Gradle permite compilar pero la integración FCM no queda configurada. Para probar notificaciones, instalar con ese archivo, conceder permiso y activar mantener sesión. Ver [Firebase](../docs/firebase-notificaciones.md).
 
-`ShopRepository` separa la interfaz del almacenamiento. La versión conectada necesita operaciones remotas específicas, autenticación, gestión de sesiones, paginación y políticas RLS; no basta con cambiar la URL o subir este archivo JSON a Supabase.
-
-## Versiones fijadas
-
-Estado de verificación: pasaron seis pruebas de reglas en Kotlin/JVM. La compilación Android, el APK y la revisión visual en dispositivo quedan pendientes del SDK. Ver [evidencias y límites](../docs/verificacion-android.md).
-
-AGP 8.9.2, Gradle 8.11.1, Kotlin y compilador Compose 2.1.20, Compose BOM 2025.04.01, compileSdk/targetSdk 35, minSdk 26. Son una base reproducible elegida para el prototipo, no una afirmación de que sean las últimas versiones. Revalidar dependencias y políticas de publicación antes de una entrega en tienda.
-
-El wrapper Gradle procede del repositorio oficial Gradle v8.11.1. Su distribución ZIP tiene SHA-256 fijado. No se incluye ninguna contraseña, clave administrativa ni SDK dentro del proyecto.
+Ver [instalación ADB](README_ADB.md), [estado actual](../docs/estado-actual.md) y [pruebas del último incremento](../docs/mejoras-pedidos-octubre.md).

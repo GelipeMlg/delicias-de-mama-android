@@ -91,12 +91,12 @@ git switch codex/android
 git merge main
 ```
 
-Mientras no haya un remoto configurado, estas ramas y commits existen únicamente en este equipo. Cuando el equipo conecte un repositorio compartido, se podrá revisar e integrar mediante pull requests.
+El remoto del proyecto es https://github.com/GelipeMlg/delicias-de-mama-android (privado). Los commits solo quedan respaldados fuera del PC después de git push. Ver docs/respaldo-github.md. Las ramas históricas pueden estar atrasadas respecto de main.
 
 ## Qué comprobar por área
 
 - **Base de datos:** integridad, permisos y transacciones; consulta `supabase/README.md` antes de ejecutar pruebas sobre un servicio remoto.
-- **Android:** pruebas de reglas, compilación y revisión en dispositivo según `docs/guia-android.md`. Mantener explícita la distinción entre demo local y app conectada.
+- **Android:** pruebas de reglas, compilación y revisión en dispositivo según `docs/guia-android.md`. Usar android/README.md como guía vigente de la app conectada; las entregas antiguas son históricas.
 - **Documentación:** coherencia con lo implementado, enlaces válidos, fuentes y evidencia. Los Word necesitan revisión visual; la limitación pendiente del documento actual está registrada en `docs/base-de-datos.md`.
 
 ## Git y Supabase son independientes

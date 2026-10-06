@@ -1,41 +1,34 @@
 # Delicias de Mamá
 
-Proyecto académico de Ingeniería de Software para una aplicación Android de gestión de una repostería.
+Proyecto Integrado TI de INACAP: aplicación Android para gestionar catálogo, pedidos, cotizaciones, agenda y finanzas de la PYME Delicias de Mamá.
+
+**Equipo:** Felipe Alvarado, Jafet Lavados y Matias Otero. Metodología incremental.
+
+## Estado actual (6 de octubre de 2026)
+
+La aplicación Kotlin/Jetpack Compose está conectada a Supabase Auth, PostgreSQL, Realtime y Storage. Firebase Cloud Messaging permite avisos de pedidos y cotizaciones. El usuario confirmó notificaciones en segundo plano e imágenes en vivo; eso no sustituye una prueba completa de regresión en dos teléfonos.
+
+- Acceso de cliente y dueña, verificación del rol en servidor y sesión persistente opcional.
+- Catálogo con CRUD, fotos, modo de pastel y opciones de sabores, rellenos y porciones. El cliente elige un sabor y un relleno.
+- Pedidos compartidos, cotizaciones, confirmación, cancelación, agenda y finanzas.
+- Filtros de pedidos, seguimiento y validación de la cotización revisada antes de aceptarla.
+- Estados actuales: solicitado, cotizado, confirmado, entregado y cancelado. Preparación, listo para retiro y pagos/abonos no están implementados.
 
 ## Organización
 
-| Área | Carpeta | Rama de trabajo |
-| --- | --- | --- |
-| SQL, migraciones y pruebas de base de datos | [supabase/](supabase/README.md) | `codex/base-de-datos` |
-| Código Kotlin, pantallas y pruebas Android | [android/](android/README.md) | `codex/android` |
-| Informes, requisitos, diseño y guías | [docs/](docs/README.md) | `codex/documentacion` |
-| Generadores de documentación | [scripts/](scripts/README.md) | `codex/documentacion` |
+| Carpeta | Contenido |
+| --- | --- |
+| [android/](android/README.md) | Código, recursos y pruebas; abrir esta carpeta en Android Studio |
+| [supabase/](supabase/README.md) | Migraciones, pruebas SQL y función de notificaciones |
+| [docs/](docs/README.md) | Requisitos, informes, diseños, guías y evidencias |
+| [scripts/](scripts/README.md) | Generadores de documentación |
 
-`main` reúne los avances revisados de las tres áreas. `codex/primer-informe` conserva el punto de partida anterior a esta organización, incluyendo el informe, las tablas y el prototipo que ya habíamos preparado.
+La copia activa en este PC es `D:\dev\Delicias de mamá`. No trabajar con copias antiguas de OneDrive. `main` contiene la versión integrada; las ramas de área son puntos de trabajo históricos y deben actualizarse desde `main` antes de reutilizarlas.
 
-Las carpetas indican dónde guardar cada archivo. Las ramas separan los cambios en desarrollo y parten de una base completa común. Al crearlas tienen el mismo contenido; no son tres copias aisladas del proyecto.
+## Empezar
 
-Consulta [cómo cambiar de rama y unir avances](CONTRIBUTING.md).
+1. Leer [configuración Android](android/README.md).
+2. Revisar [respaldo y recuperación](docs/respaldo-github.md) y [colaboración](CONTRIBUTING.md).
+3. Consultar [último incremento](docs/mejoras-pedidos-octubre.md) y [estado del proyecto](docs/estado-actual.md).
 
-## Base del proyecto
-
-El proyecto reúne el primer informe, la base de datos inicial y el código de un prototipo Android local. La integración Android con Supabase sigue pendiente. La rama `main` representa la versión integrada actual, no una aplicación terminada para producción.
-
-- [Análisis del primer informe](docs/informe-01/analisis.md): objetivos, requisitos, dudas y propuesta de inicio.
-- [Propuesta técnica](docs/propuesta-tecnica.md): evaluación académica, comparación de tecnologías y alcance recomendado.
-- [Proyecto Supabase](docs/supabase.md): estado verificado y preparación de la base compartida.
-- [Base de datos inicial](docs/base-de-datos.md): tablas creadas, relaciones, pruebas y límites de implementación.
-- [Resumen Word](docs/entregables/Resumen_base_de_datos_Delicias_de_Mama.docx): documentación académica de la base de datos.
-- [Código Android](android/README.md): aplicación de demostración local en Kotlin y Compose.
-- [Guía para Android Studio](docs/guia-android.md): instalación, apertura, ejecución y recorrido de prueba.
-- [Plan de implementación](docs/plan-implementacion.md): etapas, requisitos y documentación de la versión conectada.
-- [Verificación Android](docs/verificacion-android.md): pruebas ejecutadas y comprobaciones pendientes.
-- [Informe original](docs/informe-01/original/InformeTrabajoIngSoft(V2).docx): copia sin modificaciones del documento recibido.
-- [Texto extraído](docs/informe-01/texto-extraido.txt): apoyo para búsquedas; el Word conserva la estructura original de tablas e imágenes.
-- [Imágenes del documento](docs/informe-01/diagramas/): recursos originales extraídos del Word.
-
-El informe plantea Android nativo, Kotlin, Android Studio y compatibilidad desde Android 8.0. La arquitectura de almacenamiento y sincronización sigue pendiente de definición.
-
-## Próximo paso
-
-Abrir el prototipo en Android Studio, validar las reglas y el flujo con la dueña y avanzar con autenticación, políticas RLS y operaciones transaccionales de Supabase.
+Los informes y ZIP de entregas anteriores conservan su fecha y no describen necesariamente el código actual. GitHub guarda código y documentación; no respalda automáticamente datos, usuarios, imágenes ni secretos de Supabase/Firebase.

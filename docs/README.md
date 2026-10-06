@@ -26,3 +26,9 @@ Rama de trabajo: **`codex/documentacion`**. Los cambios técnicos en otras ramas
 Cada avance debe identificar la necesidad, el requisito asociado, la solución implementada, las pruebas y las limitaciones. Guardar los documentos finales en `entregables/` y conservar sus fuentes o generadores para poder actualizarlos. Los informes fuente recibidos se preservan en `informe-01/original/`.
 
 La fuente editable del código es `android/`; el ZIP representa una entrega concreta y no se actualiza automáticamente al cambiar de rama. La revisión visual del Word de la base de datos sigue pendiente según lo registrado en `base-de-datos.md`.
+
+- [Interfaz, CRUD y agenda](interfaz-crud-agenda.md): cambios de diseño y recorrido para probar productos, cotizaciones y finanzas.
+
+## Estado vigente
+
+Consultar primero [estado actual](estado-actual.md), [respaldo GitHub](respaldo-github.md), [Android](../android/README.md), [último incremento](mejoras-pedidos-octubre.md), [Firebase](firebase-notificaciones.md) y [fotografías](fotos-productos.md). Los informes, guías y paquetes antiguos son evidencia histórica; su estado pendiente no invalida incrementos posteriores.

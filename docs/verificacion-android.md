@@ -1,43 +1,49 @@
-# Verificación de la primera versión Android
+# Verificación Android
 
-Fecha: 16 de septiembre de 2026.
+## Actualización del 20 de septiembre de 2026
 
-## Ejecutado
+### Resultados observados
 
-Se compiló el código de dominio `Models.kt` y `ShopRulesTest.kt` con el compilador Kotlin 2.1.20 sobre Java 17 portátil. Se ejecutaron las pruebas con JUnit 4.13.2.
+- El código Compose compiló con el wrapper Gradle 8.11.1, JDK 21 y Android SDK 35. Se generó el APK debug en una carpeta temporal de compilación separada, evitando el directorio app/build bloqueado de la instalación previa.
+- Las clases compiladas por Gradle de ShopRulesTest se ejecutaron directamente con JUnit 4.13.2: **OK (12 tests)**.
+- El APK se instaló correctamente y se inició en el emulador Pixel 9a. Ver la sección de alcance de la revisión visual al final.
 
-Resultado observado:
+### Cobertura de las 12 pruebas
 
-```text
-JUnit version 4.13.2
-......
-Time: 0.447
+1. La primera solicitud ocupa el último cupo y se rechaza una segunda.
+2. Cancelar un pedido confirmado libera capacidad.
+3. Bloquear la fecha impide aceptar una cotización.
+4. Entregar un pedido dos veces se rechaza.
+5. La capacidad no puede reducirse por debajo de pedidos confirmados.
+6. Se rechazan gastos negativos y solicitudes con fecha pasada.
+7. Corregir una cotización confirmada exige nueva aceptación y mantiene un solo cupo.
+8. Cancelar una solicitud pendiente libera su cupo; su capacidad tampoco puede ignorarse.
+9. Crear, editar, retirar y reactivar productos conserva nombres históricos y disponibilidad.
+10. Editar un gasto reemplaza importe y fecha sin duplicarlo; puede eliminarse.
+11. Corregir o eliminar una venta de pedido mantiene la cotización cerrada y la ocupación.
+12. Ventas manuales: creación, edición, eliminación y rechazo de importes, vínculos y fechas inválidas.
 
-OK (6 tests)
-```
+Estas pruebas verifican reglas locales, no concurrencia entre usuarios ni políticas de Supabase.
 
-Las seis pruebas verifican:
+### Limitación del ejecutor Gradle en este equipo
 
-1. Solo un pedido puede tomar el último cupo en el estado local.
-2. Cancelar una reserva confirmada libera su cupo.
-3. Una fecha bloqueada impide aceptar la cotización.
-4. Una entrega no puede registrarse por segunda vez.
-5. La capacidad no puede reducirse por debajo de los pedidos comprometidos.
-6. Se rechazan gastos negativos y solicitudes para fechas pasadas.
+testDebugUnitTest compiló las pruebas, pero su ejecutor falló inicialmente con ClassNotFoundException para ShopRulesTest. Un segundo intento encontró un acceso denegado al directorio de resultados binarios dentro de OneDrive. La ejecución directa de las mismas clases con JUnit pasó las 12 pruebas. No se informa testDebugUnitTest como una tarea aprobada.
 
-La primera prueba simula confirmaciones consecutivas en el prototipo local; no es una prueba de concurrencia en Supabase. Los límites deben implementarse y volver a probarse en una transacción del servidor.
+Para evitar los bloqueos de archivos, conviene probar una copia del proyecto en una carpeta local fuera de OneDrive y sin acentos. No se movió el proyecto del usuario ni se borraron sus directorios de compilación.
 
-Java se descargó desde Adoptium, con verificación de su SHA-256 publicado. El compilador y JUnit se descargaron desde Maven Central a `.tmp/`, sin modificar la configuración Java de Windows. Los archivos temporales no forman parte de Git ni del código entregado.
+### Validaciones que siguen pendientes
 
-También se revisaron los archivos XML y el contenido del paquete ZIP, y se ejecutó `git diff --check`.
+- Persistencia completa tras guardar todas las operaciones de CRUD y reiniciar; la lectura y conversión de ventas antiguas sí se comprobó en el emulador.
+- Recorrido manual completo del CRUD, teclado, rotación y tamaños de letra grandes.
+- Android API 26 y otras resoluciones.
+- Autenticación, autorización, sincronización y concurrencia con Supabase.
 
-## Pendiente de ejecutar
+Seguir el recorrido de prueba en [interfaz, CRUD y agenda](interfaz-crud-agenda.md). El informe del 16 de septiembre cubría seis pruebas aisladas y no incluía un APK; esta actualización agrega las pruebas de edición y la compilación completa.
+## Revisión visual
 
-- Compilación completa del módulo Android y generación de APK con `assembleDebug`.
-- Pruebas Gradle del módulo con `testDebugUnitTest`.
-- Ejecución y revisión visual de Compose en emulador o teléfono.
-- Persistencia después de cerrar y reiniciar la aplicación en Android.
-- Pruebas de navegación, teclado, pantallas pequeñas, Android API 26 y API 35.
-- Pruebas de integración, autenticación y concurrencia con Supabase.
+Se revisaron el catálogo y Finanzas en Pixel 9a. El archivo existente tenía versión 1, dos pedidos entregados por un total de $42.000 y gastos por $23.222. La pantalla nueva mostró ambas sumas y su diferencia de $18.778, comprobando la lectura de datos anteriores y la conversión de sus ventas en memoria.
 
-No se encontró Android SDK ni Android Studio en las rutas habituales consultadas. Se entrega código fuente, no un APK compilado ni una app validada en dispositivo. Seguir [la guía de Android Studio](guia-android.md) para completar esas verificaciones.
+Las capturas se guardaron en docs/diseno/capturas. Durante el arranque hubo lentitud y un aviso de System UI sin respuesta; después se pudo navegar. No se considera una prueba de rendimiento ni un recorrido completo de aceptación.
+También se creó un gasto de prueba por $1.000 desde el formulario real. Se comprobó en el archivo guardado: versión 2, tres productos, dos ventas migradas y los dos gastos anteriores más el nuevo gasto. La sesión del emulador se ejecutó con -read-only y -no-snapshot-save, por lo que estas operaciones de prueba no reemplazan los datos persistentes del AVD original.
+
+Tras guardar, se forzó el cierre del proceso y se inició nuevamente: el catálogo cargó sin error de lectura con el archivo versión 2.

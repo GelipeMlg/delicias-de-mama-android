@@ -20,6 +20,6 @@ Rama de trabajo: **`codex/base-de-datos`**.
 
 La prueba inicial usa la fecha `2099-01-01`. Antes de ejecutarla en otro entorno, comprobar que no exista allí; termina con reversión y no es una herramienta para borrar datos. Si se interrumpe una ejecución dentro de una sesión SQL, comprobar el estado transaccional antes de seguir.
 
-Todavía no hay configuración de Supabase CLI ni historial de migraciones CLI sincronizado con la ejecución manual. Cambiar ramas de Git no proporciona aislamiento de la base remota. Las tablas siguen cerradas a la app; las políticas operativas y la confirmación concurrente están pendientes.
+Existe config.toml para la función enviar-notificaciones. Las migraciones posteriores incluyen acceso de dueña, catálogo, sabores, pedidos compartidos y fotografías. La app utiliza Auth y RPC con autorización del servidor. No se ha reconciliado aquí el historial CLI con las ejecuciones manuales: no ejecutar db push a ciegas. Cambiar ramas de Git no proporciona aislamiento de la base remota. Consultar ../docs/estado-actual.md y ../docs/firebase-notificaciones.md.
 
 Ver [guía de trabajo con ramas](../CONTRIBUTING.md).

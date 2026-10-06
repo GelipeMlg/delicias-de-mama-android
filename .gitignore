@@ -11,3 +11,22 @@ local.properties
 **/build/
 .idea/
 *.iml
+
+# Configuración local y credenciales
+android/app/google-services.json
+*service-account*.json
+*service_account*.json
+*firebase-adminsdk*.json
+*.pem
+*.key
+*.jks
+*.keystore
+key.properties
+*.apk
+*.aab
+*.log
+supabase/.temp/
+supabase/.branches/
+# Material ajeno al proyecto integrado
+/django_app/
+/entregas/
