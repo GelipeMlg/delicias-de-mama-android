@@ -5,11 +5,15 @@ Equipo: Felipe Alvarado, Jafet Lavados y Matias Otero.
 
 Esta carpeta reúne una copia documental de trabajo. No es todavía el paquete final aprobado para entregar. Los originales permanecen en sus ubicaciones y el código vigente está en ../android. No incluye credenciales privadas, datos de clientes ni proyectos de otras asignaturas.
 
+## Informe U1 actualizado
+
+El archivo **02 Informes Word/Informe_U1_Diagnostico_Delicias_de_Mama_2026.docx** es la nueva versión de revisión del 7 de octubre de 2026, basada en la app actual y en Carta-1-vert.docx. Contiene diagnóstico, requisitos, seis historias, enfoque incremental, seguridad y justificación de viabilidad. Consultar **00 Revision/Control informe U1 2026.md** antes de entregar.
+
 ## Dónde está cada cosa
 
 - **00 Revision:** evaluación de cobertura U1/U2/U3, diferencias y pendientes.
 - **01 Pautas:** las tres guías oficiales y la infografía (solo presentación final).
-- **02 Informes Word:** informes existentes, sin modificar, y primer informe original. Son versiones históricas; leer la revisión antes de entregarlos.
+- **02 Informes Word:** informe U1 actualizado y versiones históricas conservadas sin modificar; leer la revisión antes de entregarlos.
 - **03 Documentacion:** copia de manuales, requisitos, diseños, SQL y función de notificaciones. Se conserva la estructura de docs/android/supabase para facilitar referencias; enlaces a código o entregables no copiados pueden requerir consultar el repositorio principal.
 - **04 Evidencias:** resultados JUnit y HTML, capturas históricas reales y prototipo conceptual claramente separado.
 - **05 Registros pendientes:** plantilla para pruebas manuales; no representa pruebas ejecutadas.
