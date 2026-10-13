@@ -9,11 +9,15 @@ Esta carpeta reúne una copia documental de trabajo. No es todavía el paquete f
 
 El archivo **02 Informes Word/Informe_U1_Diagnostico_Delicias_de_Mama_2026.docx** es la nueva versión de revisión del 7 de octubre de 2026, basada en la app actual y en Carta-1-vert.docx. Contiene diagnóstico, requisitos, seis historias, enfoque incremental, seguridad y justificación de viabilidad. Consultar **00 Revision/Control informe U1 2026.md** antes de entregar.
 
+## Informe U2 de diseño
+
+El archivo **02 Informes Word/Informe_U2_Diseno_Delicias_de_Mama_2026.docx** corresponde a la revisión del 13 de octubre de 2026. Incluye planificación incremental, arquitectura 4+1, interfaces, datos, seguridad y plan de pruebas. Las nueve figuras están en **03 Documentacion/U2/figuras**. Consultar **00 Revision/Control informe U2 2026.md**: el calendario es propuesto y la fecha oficial, sección y validaciones siguen pendientes.
+
 ## Dónde está cada cosa
 
 - **00 Revision:** evaluación de cobertura U1/U2/U3, diferencias y pendientes.
 - **01 Pautas:** las tres guías oficiales y la infografía (solo presentación final).
-- **02 Informes Word:** informe U1 actualizado y versiones históricas conservadas sin modificar; leer la revisión antes de entregarlos.
+- **02 Informes Word:** informes U1 y U2 actualizados y versiones históricas conservadas sin modificar; leer la revisión antes de entregarlos.
 - **03 Documentacion:** copia de manuales, requisitos, diseños, SQL y función de notificaciones. Se conserva la estructura de docs/android/supabase para facilitar referencias; enlaces a código o entregables no copiados pueden requerir consultar el repositorio principal.
 - **04 Evidencias:** resultados JUnit y HTML, capturas históricas reales y prototipo conceptual claramente separado.
 - **05 Registros pendientes:** plantilla para pruebas manuales; no representa pruebas ejecutadas.
