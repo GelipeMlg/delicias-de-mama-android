@@ -6,7 +6,7 @@ Archivo: `02 Informes Word/Informe_U2_Diseno_Delicias_de_Mama_2026.docx`.
 ## Alcance y cobertura
 
 - Proyecto Integrado TI: app Android, Supabase y Firebase Cloud Messaging.
-- Equipo: Felipe Alvarado, Jafet Lavados y Matias Otero.
+- Equipo: Felipe Alvarado y Jafet Lavados.
 - Docente: Jessica Paola Miranda Márquez.
 - Sede INACAP Punta Arenas; carrera Analista Programador.
 - 22 páginas y nueve figuras, siguiendo Carta-1-vert.docx.

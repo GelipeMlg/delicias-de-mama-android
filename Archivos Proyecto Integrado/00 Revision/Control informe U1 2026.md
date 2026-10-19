@@ -1,6 +1,6 @@
 # Control del informe U1
 
-Versión: 7 de octubre de 2026. Equipo: Felipe Alvarado, Jafet Lavados y Matias Otero.
+Versión: 7 de octubre de 2026. Equipo: Felipe Alvarado y Jafet Lavados.
 
 ## Documento
 

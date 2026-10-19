@@ -71,7 +71,7 @@ def table(headers,rows,widths):
  body.append(tb);para('')
 replace(cover[2],'DIAGNÓSTICO DEL PROBLEMA INFORMÁTICO')
 replace(cover[3],'Delicias de Mamá')
-replace(cover[8],'NOMBRE: Felipe Alvarado, Jafet Lavados y Matias Otero\nCARRERA: Analista Programador\nASIGNATURA: Proyecto Integrado TI · TIHV43\nPROFESOR: Por confirmar\nFECHA: 7 de octubre de 2026 · Versión para revisión')
+replace(cover[8],'NOMBRE: Felipe Alvarado y Jafet Lavados\nCARRERA: Analista Programador\nASIGNATURA: Proyecto Integrado TI · TIHV43\nPROFESOR: Por confirmar\nFECHA: 7 de octubre de 2026 · Versión para revisión')
 for x in cover:body.append(x)
 page('Resumen ejecutivo')
 p('Delicias de Mamá necesita coordinar encargos personalizados, disponibilidad, cotizaciones y registros de ventas y gastos. El levantamiento original identifica estos procesos como el núcleo de la solución [2]. Diagnosticamos como necesidad central mantener información compartida y coherente entre la dueña y sus clientes, con permisos diferenciados y reglas que eviten comprometer más pedidos que la capacidad disponible.')
@@ -202,7 +202,7 @@ p('Técnica. Existe app compilable, integración de servicios y 39 pruebas unita
 p('Económica. Reutilizar equipos y código reduce nuevas adquisiciones académicas. El trabajo tiene costo de tiempo y la operación exige conectividad, mantenimiento, respaldo y revisar límites de servicios. No existe presupuesto aprobado ni ahorro medido. Proponemos estimar costo mensual total y comparar horas administrativas y correcciones antes/después de un piloto. No se presenta un retorno asegurado ni gratuidad ilimitada de la nube.')
 p('Operativa. La solución responde a coordinación, cotización y control identificados. La edición de productos y movimientos facilita adaptación. La adopción depende de que la dueña complete tareas con poca ayuda y tenga una alternativa ante falta de red. Su aceptación no se reemplaza por la opinión del equipo. La conclusión es viabilidad académica fundamentada y validación operativa pendiente.')
 sub('7 2 Plan de tres semanas para U1')
-p('Plan propuesto desde el 7 de octubre, con entrega tentativa el 27 de octubre de 2026. No describe tareas ya ejecutadas ni el plazo completo del software. El equipo responsable es Felipe Alvarado, Jafet Lavados y Matias Otero; la distribución individual debe acordarse.')
+p('Plan propuesto desde el 7 de octubre, con entrega tentativa el 27 de octubre de 2026. No describe tareas ya ejecutadas ni el plazo completo del software. El equipo responsable es Felipe Alvarado y Jafet Lavados; la distribución individual debe acordarse.')
 table(['Período','Producto de trabajo','Cierre esperado'],[
 ['7–13 octubre','Contrastar entrevista, reglas y alcance; precisar historias.','Acta real, observaciones y datos académicos.'],
 ['14–20 octubre','Relacionar requisitos con app, evidencia, seguridad y viabilidad.','Matriz actualizada y resultados sin datos privados.'],

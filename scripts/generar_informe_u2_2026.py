@@ -89,7 +89,7 @@ def figure(name,caption):
  p(caption)
 replace(cover[2],'DISEÑO DE LA SOLUCIÓN DE SOFTWARE')
 replace(cover[3],'Delicias de Mamá · Unidad 2')
-replace(cover[8],'NOMBRE: Felipe Alvarado, Jafet Lavados y Matias Otero\nCARRERA: Analista Programador · INACAP Punta Arenas\nASIGNATURA: Proyecto Integrado TI · TIHV43\nPROFESORA: Jessica Paola Miranda Márquez\nFECHA: 13 de octubre de 2026 · Versión para revisión')
+replace(cover[8],'NOMBRE: Felipe Alvarado y Jafet Lavados\nCARRERA: Analista Programador · INACAP Punta Arenas\nASIGNATURA: Proyecto Integrado TI · TIHV43\nPROFESORA: Jessica Paola Miranda Márquez\nFECHA: 13 de octubre de 2026 · Versión para revisión')
 for x in cover:body.append(x)
 page('Resumen y alcance del diseño')
 p('Diseñamos una solución Android para coordinar el catálogo, las solicitudes personalizadas, la disponibilidad diaria, las cotizaciones y los registros financieros de Delicias de Mamá. Este informe desarrolla las seis actividades de la Unidad 2 y conecta sus decisiones con los requisitos del diagnóstico U1 [1–2]. La propuesta utiliza Kotlin y Jetpack Compose, Supabase y Firebase Cloud Messaging.')
@@ -129,7 +129,7 @@ page('2 Recursos y control de avances')
 sub('2 3 Responsabilidades propuestas')
 p('La siguiente asignación es una propuesta para acordar, no una declaración de aportes pasados. Todos revisan el documento y deben poder explicar el diseño completo.')
 table(['Integrante','Responsabilidad propuesta','Revisión cruzada'],[
-['Felipe Alvarado','Arquitectura Android, integración y componentes.','Revisar casos de prueba con Matias.'],['Jafet Lavados','Modelo de datos, diccionario y reglas del servidor.','Revisar arquitectura con Felipe.'],['Matias Otero','Interfaces, planificación y registro de pruebas.','Revisar datos con Jafet.']],[2700,4500,3400])
+['Felipe Alvarado','Arquitectura Android, integración, componentes e interfaces.','Revisar casos de prueba con Jafet.'],['Jafet Lavados','Modelo de datos, reglas del servidor y registro de pruebas.','Revisar arquitectura con Felipe.']],[2700,4500,3400])
 sub('2 4 Recursos y dependencias externas')
 p('Se requiere PC con Android Studio, repositorio Git, archivos SQL, acceso autorizado a Supabase/Firebase y dos dispositivos Android para las pruebas posteriores. La red es necesaria para operaciones compartidas. La validación de la dueña requiere una sesión acordada y datos ficticios; no depende de adquirir nuevas funciones comerciales.')
 table(['Riesgo de planificación','Respuesta','Criterio de cierre'],[
@@ -225,7 +225,7 @@ p('Usamos OWASP MASVS como referencia móvil para almacenamiento, autenticación
 page('7 Plan de pruebas funcionales')
 sub('7 1 Organización del ensayo')
 p('Objetivo: comprobar que el pedido y la cotización atraviesan cliente, servidor y dueña sin perder integridad. Entorno: proyecto de ensayo con migraciones verificadas, APK identificado, dos dispositivos y tres cuentas ficticias (cliente A, cliente B y dueña). Registrar versión Android, red y permisos. No usar pedidos reales ni escribir sobre producción para la demostración.')
-p('Responsables propuestos: Matias ejecuta y registra; Felipe revisa app e integración; Jafet revisa reglas y datos. Se confirma esta distribución antes del ensayo. Todos los casos siguientes quedan PLANIFICADOS; el presente informe no acredita su ejecución.')
+p('Responsables propuestos: Felipe ejecuta las pruebas de app e integración; Jafet registra resultados y revisa reglas y datos. Ambos revisan los resultados. Se confirma esta distribución antes del ensayo. Todos los casos siguientes quedan PLANIFICADOS; el presente informe no acredita su ejecución.')
 table(['Caso y requisito','Precondición y pasos','Resultado esperado'],[
 ['PF-01 · RF-01/03/04/07','Producto de ensayo, fecha futura con 2 cupos. A solicita 1 unidad; dueña cotiza $25.000; A recarga y acepta; dueña entrega.','Mismo pedido en ambos dispositivos, cotización vigente, estado entregado y una sola venta.'],
 ['PF-02 · RF-02','Fecha de ensayo con 1 cupo y ninguna ocupación. A y B solicitan casi simultáneamente; cancelar el pedido aceptado.','Solo uno se guarda. El otro recibe rechazo. Cancelar libera cupo.'],
@@ -259,7 +259,7 @@ p('La profesora y sede se registran según confirmación del equipo. Sección/gr
 p('Esta versión es un informe de diseño listo para revisión del equipo. La correspondencia con los seis criterios facilita evaluar su cobertura, pero no asegura una nota ni reemplaza las indicaciones específicas de la docente.')
 page('Referencias y fuentes')
 p('[1] INACAP. Guía ABPro Unidad 2, Diseño de la solución de software, Proyecto Integrado TIHV43. Documento proporcionado por el equipo: TIHV43_GUÍA_ABPRO_U2.docx. Actividades 1–6 y criterios 2.1.1–2.1.6.')
-p('[2] Alvarado, F., Lavados, J. y Otero, M. (2026). Diagnóstico del problema informático, Delicias de Mamá. Informe U1 del 7 de octubre de 2026, versión de revisión. Requisitos RF-01 a RF-10 y RNF-01 a RNF-06.')
+p('[2] Alvarado, F. y Lavados, J. (2026). Diagnóstico del problema informático, Delicias de Mamá. Informe U1 del 7 de octubre de 2026, versión de revisión. Requisitos RF-01 a RF-10 y RNF-01 a RNF-06.')
 p('[3] Equipo Delicias de Mamá. Código y documentación del proyecto Android, revisados el 13 de octubre de 2026. Repositorio: https://github.com/GelipeMlg/delicias-de-mama-android. Fuentes principales: Models.kt, MainActivity.kt, ShopViewModel.kt, ConnectedRepository.kt, SecureSessionStore.kt y migraciones SQL del 16 al 29 de septiembre de 2026.')
 p('[4] OWASP Foundation. Mobile Application Security Verification Standard (MASVS). Consultado el 13 de octubre de 2026. https://mas.owasp.org/MASVS/ . Referencia para categorías de controles móviles; no certifica el proyecto.')
 p('[5] Supabase. Row Level Security. Consultado el 13 de octubre de 2026. https://supabase.com/docs/guides/database/postgres/row-level-security . Referencia de autorización de datos; las funciones privilegiadas requieren análisis propio.')

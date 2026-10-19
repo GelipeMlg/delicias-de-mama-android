@@ -2,7 +2,7 @@
 
 Proyecto Integrado TI de INACAP: aplicación Android para gestionar catálogo, pedidos, cotizaciones, agenda y finanzas de la PYME Delicias de Mamá.
 
-**Equipo:** Felipe Alvarado, Jafet Lavados y Matias Otero. Metodología incremental.
+**Equipo:** Felipe Alvarado y Jafet Lavados. Metodología incremental.
 
 ## Estado actual (6 de octubre de 2026)
 

@@ -1,6 +1,6 @@
 # Estado actual y continuidad
 
-Revisión: 6 de octubre de 2026. Equipo: Felipe Alvarado, Jafet Lavados y Matias Otero.
+Revisión: 6 de octubre de 2026. Equipo: Felipe Alvarado y Jafet Lavados.
 
 Fuente activa: `D:\dev\Delicias de mamá`. Abrir `android` en Android Studio. No usar OneDrive. El proyecto integrado comprende Android, Supabase, Firebase y documentación académica; otras aplicaciones de asignaturas están fuera del alcance.
 

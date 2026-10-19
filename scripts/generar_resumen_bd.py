@@ -84,7 +84,7 @@ def table(headers, rows, widths):
 doc.add_heading('Base de datos de Delicias de Mamá', 0)
 p('Proyecto Integrado TI · Resumen de diseño e implementación inicial', 'Subtitle')
 p('Versión 1.0 · 16 de septiembre de 2026')
-p('Equipo: Felipe Alvarado, Matias Otero y Jafet Lavados\nCarrera: Analista Programador · INACAP')
+p('Equipo: Felipe Alvarado y Jafet Lavados\nCarrera: Analista Programador · INACAP')
 h('1 Propósito y resultado')
 p('Construimos la estructura inicial de la base de datos para organizar clientes, pedidos personalizados, disponibilidad, cotizaciones y movimientos financieros de la repostería. El objetivo es mantener una misma información para la futura aplicación Android de clientes y dueña.')
 p('Se crearon diez tablas en PostgreSQL, dentro del proyecto Supabase Delicias de mamá. La ejecución y las pruebas de integridad se comprobaron en el editor SQL. Las tablas quedaron sin datos de negocio y con protección de acceso habilitada. Esta entrega establece la estructura; no representa todavía una aplicación operativa.')

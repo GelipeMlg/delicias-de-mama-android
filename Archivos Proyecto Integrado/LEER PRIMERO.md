@@ -1,7 +1,7 @@
 # Archivos Proyecto Integrado
 
 Fecha de organización: 6 de octubre de 2026.
-Equipo: Felipe Alvarado, Jafet Lavados y Matias Otero.
+Equipo: Felipe Alvarado y Jafet Lavados.
 
 Esta carpeta reúne una copia documental de trabajo. No es todavía el paquete final aprobado para entregar. Los originales permanecen en sus ubicaciones y el código vigente está en ../android. No incluye credenciales privadas, datos de clientes ni proyectos de otras asignaturas.
 
@@ -28,3 +28,7 @@ El archivo **02 Informes Word/Informe_U2_Diseno_Delicias_de_Mama_2026.docx** cor
 Revisar primero 00 Revision/Revision por pauta.md. No presentar wireframes como pantallas implementadas ni una lista de pasos como prueba aprobada. Los resultados unitarios corresponden al 1 de octubre; el 6 de octubre Gradle los reutilizó con BUILD SUCCESSFUL y 43 tareas UP-TO-DATE. No se ejecutaron pruebas remotas para organizar esta carpeta.
 
 Las copias no se actualizan automáticamente. Editar las fuentes originales y renovar la copia cuando cambie una entrega. Las guías indican entrega por AAI en un comprimido identificado por grupo/sección; esos datos y el plazo deben confirmarse con el docente antes de preparar la entrega definitiva.
+
+## Actualización del equipo — 18 de octubre de 2026
+
+El equipo vigente está compuesto por Felipe Alvarado y Jafet Lavados. Se actualizaron portadas, responsabilidades propuestas y generadores de los informes. Los originales históricos y sus referencias bibliográficas conservan su autoría. La distribución de tareas entre ambos integrantes sigue siendo propuesta.
